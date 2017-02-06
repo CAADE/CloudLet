@@ -1,0 +1,39 @@
+@startuml
+Actor "Ops Manager" As Ops
+
+box "Cloud" #lightBlue
+participant "Cloudlet Manager" as CMM
+participant "CMP" as CMPM
+Ops -> CMM : AddCloudlet(Cloudlet)
+end box
+box "Federation" #ffffaa
+participant "Federated\nOrchestrated\nCloud" as FOC
+participant "Data\nCoordinator" as DC
+participant "Identity\nManager" as IM
+end box
+box "Cloudlet" #lightgreen
+participant "Cloudlet Manager" as CMS
+participant "CMP" as CMPS
+end box
+
+CMM --/ CMS: registerToCloud(Cloudlet, Federation, creds)
+activate CMS
+CMS --/ CMM: registerCloudlet(Cloudlet, creds)
+CMM -> CMS: updateFederatedPolicies(Policies)
+CMM -> CMPM: getClouds(): Cloud[]
+CMM -> CMS: registerClouds(Cloud[]);
+loop Cloud[]
+CMS -> CMPS: registerCloud(Cloud)
+end
+CMS -> FOC: registerCloudlet(me)
+CMS -> DC: registerCloudlet(me)
+CMS -> IM: registerCloudlet(me)
+IM -> CMS: syncIdentities()
+deactivate CMS
+CMS -> CMS: syncBasedOnPolicies
+activate CMS
+CMS -> DC: sync(Images)
+CMS -> DC: sync(Services)
+CMS -> DC: sync(Storage)
+deactivate CMS
+@enduml

@@ -1,0 +1,43 @@
+@startuml
+Actor "Stack Developer" As Stack
+
+box "Cloud" #lightBlue
+participant "Cloudlet Manager" as CMM
+participant "CMP" as CMPM
+participant "SDI" as SDIM
+end box
+box "Federation" #ffffaa
+participant "Federated\nOrchestrated\nCloud" as FOC
+participant "Data\nCoordinator" as DC
+participant "Identity\nManager" as IM
+end box
+box "Cloudlet" #lightgreen
+participant "Cloudlet Manager" as CMS
+participant "CMP" as CMPS
+participant "SDI" as SDIS
+end box
+
+activate CMM
+Stack -> CMM : registerService(Service)
+CMM -> CMPM : registerService(Service)
+CMM -> CMM : decomposeService(Service) : images[]
+loop images[] : image
+CMM -> SDIM : registerImage(image)
+CMM -\ DC : registerImage(image)
+activate DC
+DC -\ CMS : newImage(image)
+activate CMS
+CMS -> SDIS : registerImage(image)
+deactivate CMS
+deactivate DC
+end
+CMM -\ FOC : registerService(Service,Cloudlet Manager)
+activate FOC
+FOC -\ CMS : newService(Service)
+activate CMS
+CMS -> CMPS : registerService(Service)
+deactivate CMS
+deactivate FOC
+deactivate CMM
+
+@endum

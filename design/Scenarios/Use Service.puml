@@ -1,0 +1,23 @@
+@startuml
+Actor "User" As User
+
+box "Cloud" #lightBlue
+participant "CMP" as CMPM
+participant "SDI" as SDIM
+end box
+box "Federation" #ffffaa
+participant "Federated\nOrchestrated\nCloud" as FOC
+participant "Data\nCoordinator" as DC
+participant "Identity\nManager" as IM
+end box
+box "Cloudlet" #lightgreen
+participant "CMP" as CMPS
+participant "SDI" as SDIS
+end box
+User -> CMPM : useService(template)
+CMPM -> CMPM : decomposeService(template) : infrastructure[]
+loop  infrastructure[] : infra
+CMPM -> CMPM : requestInfrastructure(infra)
+CMPM -> CMPM : provisionService(service)
+end
+@endum

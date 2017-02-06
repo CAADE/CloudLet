@@ -1,0 +1,28 @@
+@startuml
+
+package "Base Cloud" {
+SDI - [SDI Base]
+[SDI Base]
+[SDN Base]
+[Data Fabric]
+}
+
+package "Cloudlet 1" {
+CMP1 - [SDI Local 1]
+[SDI Local 1] --> [Federated SDN 1]
+[SDI Local 1] --> [SDS 1]
+[Federated SDN 1] -> [SDN Base]
+[SDS 1] -> [Data Fabric]
+CMP1 - [SDI]
+}
+
+package "Cloudlet 2 " {
+CMP2 - [SDI Local 2]
+[SDI Local 2] --> [Federated SDN 2]
+[SDI Local 2] --> [SDS 2]
+[Federated SDN 2] -> [SDN Base]
+[SDS 2] -> [Data Fabric]
+CMP2 - [SDI]
+}
+
+@enduml
