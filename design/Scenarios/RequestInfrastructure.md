@@ -1,7 +1,7 @@
 # Request Infrastructure
 
 ## Actor
-* [User](../Actors/User/README.md)
+* [Application Developer](../Actors/ApplicationDeveloper/README.md)
 
 ## Scenario
 
