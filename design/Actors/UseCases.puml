@@ -1,5 +1,5 @@
 @startuml
-:Ops Manager: as Ops
+:Operations Manager: as Ops
 :End User: as User
 :Stack Developer: as Stack
 

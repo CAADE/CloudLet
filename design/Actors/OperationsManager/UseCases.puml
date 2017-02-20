@@ -3,7 +3,7 @@ left to right direction
 
 :Operations Engineer: as Ops
 
-rectangle "Operations Manager" {
+rectangle "Operations Manager CAADE" {
 Ops --> (Create Policy)
 Ops --> (Manage Policy)
 Ops --> (Manage Running Applications)
@@ -11,5 +11,14 @@ Ops --> (Plan Capacity)
 Ops --> (Manage Users)
 Ops --> (Manage Clouds)
 Ops --> (Map Cloud Resources)
+}
+
+rectangle "Cloudlet" {
+Ops --> (Add Cloutlet)
+Ops --> (Update Local Policy)
+Ops --> (Update Federated Policy)
+(Manage Policy) --> (Update Local Policy)
+(Manage Policy) --> (Update Federated Policy)
+
 }
 @enduml

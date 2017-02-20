@@ -4,7 +4,7 @@ left to right direction
 
 :Application Developer: as Dev
 
-rectangle "Application Manager" {
+rectangle "Application Manager CAADE" {
     (Create an Application) as CA
     (Launch application in an environment) as LAE
     (Run Command) as RC
@@ -12,6 +12,13 @@ rectangle "Application Manager" {
     (Kill Application and Services) as KAS
     (Get Logs) as GL
     (Deploy an Application) as DA
+}
+
+rectangle "Cloudlet" {
+  Dev --> (Use Service)
+  Dev --> (Request Infrastructure)
+  RC --> (Request Infrastructure)
+  LAE --> (Use Service)
 }
 
 Dev --> CA

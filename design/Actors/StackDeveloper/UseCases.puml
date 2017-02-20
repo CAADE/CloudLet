@@ -18,6 +18,13 @@ rectangle "Application Manager" {
   (Test Application Stack) --> (Create an Application)
   (Test Application Stack) --> (Launch an Application in an environment)
   (Test Application Stack) --> (Kill Application and Services)
+
 }
+
+rectangle "Cloudlet" {
+  Admin --> (Use Service)
+  (Launch an Application in an environment) --> (Use Service)
+}
+
 
 @enduml

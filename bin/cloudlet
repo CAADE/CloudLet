@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+
+var program =  require('commander');
+
+program
+  .version("0.0.1")
+  .command('init', 'initalize Cloudlet on your machine')
+  .parse(process.argv);
+

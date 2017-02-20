@@ -1,6 +1,6 @@
 # Cloudlet Architectural Overview
 Cloudlets represent an architecture of federated cloud that have a CMP+Automation+PaaS+CloudOS bundle as described
-in the [CAADE](https://github.com/CAADE/Caade/blob/master/README.md) architecture. The architecture targets cloud operations
+in the [CAADE](https://github.com/CAADE/Caade/blob/master/design/README.md) architecture. The architecture targets cloud operations
 managers and should be as transparent to the end user and developer as possible.
 
 ## [Users](Actors/README.md)
@@ -20,7 +20,7 @@ managers and should be as transparent to the end user and developer as possible.
 
 ## High Level Architecture
 The Cloudlet Architecture contains a small set of services that establishes a federation of cloud by standardizing on a
-common CMP layer from the [CAADE](https://github.com/CAADE/Caade/blob/master/README.md) architecture. Each Cloud will
+common CMP layer from the [CAADE](https://github.com/CAADE/Caade/blob/master/design/README.md) architecture. Each Cloud will
 a CloudletManager Service running that will help establish the federations between the clouds. Coordination between the
 Clouds in the Federation will be handled by a set of services that give the federation connectivity.
 
