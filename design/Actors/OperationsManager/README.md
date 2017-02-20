@@ -7,9 +7,9 @@ Click here to see the base [Operation Manager Specification](https://github.com/
 
 ## Use Cases
 
-* Add Cloudlet
-* Update Local Policies
-* Update Federated Policies
+* [Add Cloudlet](Add%20Cloudlet/README.md)
+* [Update Local Policies](Update%20Local%20Policies/README.md)
+* [Update Federated Policies](Update%20Federated%20Policies/README.md)
 
 ![Image](UseCases.png)
 

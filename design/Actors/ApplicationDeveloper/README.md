@@ -7,8 +7,8 @@ Click here to see the base Use Cases and [Application Developer Specification](h
 
 ## Use Cases
 
-* Use Service
-* Request Infrastructure
+* [Use Service](Use%20Service/README.md)
+* [Request Infrastructure](RequestInfrastructure/README.md)
 
 ![Image](UseCases.png)
 
