@@ -1,0 +1,31 @@
+@startuml
+
+package CloudLet #ccbbff {
+  [Cloudlet Manager] --> [CMP]
+  [Cloudlet Manager] --> [SDI]
+  [CMP] -> [SDI]
+}
+
+package CloudLet2  #ccbbff {
+  [Cloudlet Manager 2] -> [SDI 2]
+  [Cloudlet Manager 2] --> [CMP 2]
+  [CMP 2] -> [SDI 2]
+}
+
+package Federation #bbffff {
+    component CIT
+    component "Identity Manager"
+    component "Data Coordinator"
+    component "Federated Orchestrated Cloud"
+    [Federated Orchestrated Cloud] -> [Data Coordinator]
+    [Federated Orchestrated Cloud] --> [Identity Manager]
+    [Data Coordinator] --> [CIT]
+    [Data Coordinator] --> [Identity Manager]
+}
+
+[Cloudlet Manager] --> [Federated Orchestrated Cloud]
+[Cloudlet Manager 2] --> [Federated Orchestrated Cloud]
+[Federated Orchestrated Cloud] --> [SDI]
+[Federated Orchestrated Cloud] -> [SDI 2]
+
+@enduml

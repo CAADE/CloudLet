@@ -1,7 +1,7 @@
 # Add Cloudlet to Cloud
 
 ## Actor
-* [Ops Manager](../Actors/OperationsManager/README.md)
+* [Ops Manager](../../Actors/OperationsManager/README.md)
 
 ## Scenario
 Operations Manger adds a new "Cloudlet" to the Cloud Federations. This allows a remote site Cloud 
@@ -12,8 +12,8 @@ of multiple clouds is transparent to the end user.
 ![Image](Add Cloudlet.png)
 
 ## Systems Invovled
-* [Cloudlet Manager](../Systems/Cloudlet Manager/README.md)
-* [CMP - Cloud Management Platform](../Systems/CMP/README.md)
-* [Federated Orchestrated Cloud](../Systems/Federated Orchestrated Cloud/README.md)
-* [Data Coordinator](../Systems/Data Coordinator/README.md)
-* [Identity Manager](../Systems/Identity Manager/README.md)
+* [Cloudlet Manager](../../Systems/Cloudlet%20Manager/README.md)
+* [CMP - Cloud Management Platform](../../Systems/CMP/README.md)
+* [Federated Orchestrated Cloud](../../Systems/Federated%20Orchestrated%20Cloud/README.md)
+* [Data Coordinator](../../Systems/Data%20Coordinator/README.md)
+* [Identity Manager](../../Systems/Identity%20Manager/README.md)

@@ -1,7 +1,7 @@
 # Scenarios
-* [Add CloudLet](AddCloudLet.md)
-* [Register Service](RegisterService.md)
-* [Request Infrastructure](RequestInfrastructure.md)
-* [Update Federated Policies](UpdateFederatedPolicies.md)
-* [Update Local Policies](UpdateLocalPolicies.md)
-* [Use Service](UseService.md)
+* [Add CloudLet](Add Cloudlet/README.md)
+* [Register Service](Register Service/README.md)
+* [Request Infrastructure](Request Infrastructure/README.md)
+* [Update Federated Policies](Update Federated Policies/README.md)
+* [Update Local Policies](Update Local Policies/README.md)
+* [Use Service](Use Service/UseService.md)
