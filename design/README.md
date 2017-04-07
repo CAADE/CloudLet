@@ -30,10 +30,10 @@ Clouds in the Federation will be handled by a set of services that give the fede
 
 ![Image](Systems/System Architecture.png)
 
-* [Cloudlet Manager](Systems/Cloudlet Manager/README.md) -  Each Cloud Has a Cloudlet manager that becomes part of the Federation
-* [Federated Orchestrated Cloud](Systems/FederatedOrchestratedCloud/README.md) - Federated Orchestrated to schedule service requests acrosss multiple clouds
-* [Data Coordinator](Systems/Data Coordinator/README.md) - Coordinates data between Clouds
-* [Identity Management](Identity Management/README.md) - Manages Identity across multiple clouds
+* [Cloudlet Manager](Systems/Cloudlet%20Manager/README.md) -  Each Cloud Has a Cloudlet manager that becomes part of the Federation
+* [Federated Orchestrated Cloud](Systems/Federated%20Orchestrated%20Cloud/README.md) - Federated Orchestrated to schedule service requests acrosss multiple clouds
+* [Data Coordinator](Systems/Data%20Coordinator/README.md) - Coordinates data between Clouds
+* [Identity Management](Identity%20Management/README.md) - Manages Identity across multiple clouds
 * [CIT](Systems/CIT/README.md) - Manages Securee keys in TPMs across multiple data centers.
 
 
@@ -52,4 +52,4 @@ with geo fencing technology using CIT.
 
 In this example Each cloud has a geo fenced data set that can be shared with other clouds but not all of the clouds.
 
-![Image](Trusted Cloudlet.png)
+![Image](Trusted%20Cloudlet.png)
