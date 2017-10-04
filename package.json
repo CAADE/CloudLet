@@ -31,7 +31,7 @@
   },
   "scripts": {
     "debug": "node debug app.js",
-    "design": "java -jar design/plantuml.8047.jar design/*.puml design/**/*.puml",
+    "design": "java -jar design/plantuml.jar design/*.puml design/**/*.puml",
     "start": "node app.js"
   },
   "main": "app.js",
