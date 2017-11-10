@@ -32,6 +32,13 @@
   "scripts": {
     "debug": "node debug app.js",
     "design": "java -jar design/plantuml.jar design/*.puml design/**/*.puml",
+    "build": "npm update",
+    "build-doc": "npm install -g github-wikito-converter &&  cd design && gwtc . -t Cloudlet",
+    "test": "npm run lint && npm run custom-tests && echo 'Done.'",
+    "custom-tests": "node ./node_modules/mocha/bin/mocha test/bootstrap.test.js test/**/*.test.js",
+    "deploy-apps": "node ./deploy/build deploy",
+    "deploy-test": "npm run-script deploy-apps && docker stack deploy --compose-file=./deploy/docker-compose-test.yaml cloudlet-test",
+    "deploy-prod": "npm run-script deploy-apps && docker stack deploy --compose-file=./deploy/docker-compose-prod.yaml cloudle-prod",
     "start": "node app.js"
   },
   "main": "app.js",

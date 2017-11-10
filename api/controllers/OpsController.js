@@ -8,9 +8,9 @@
 module.exports = {
 
   /**
-   * `OpsController.method()`
+   * `OpsController.addCloudlet()`
    */
-  method: function (req, res) {
+  addCloudlet: function (req, res) {
 
   }
 }
