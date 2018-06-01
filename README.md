@@ -4,11 +4,10 @@ The Cloudlet architecture is a reference architecture that targets federated clo
 or co-located data centers. The purpose of the architecture is to show how to connect multiple distributed clouds
 together using a federated pattern. This architecture is built on top of the [CAADE](https://github.com/CAADE/Caade/blob/master/README.md) architecture. 
 
-This repository contains the design and a simple interactive reference architecture of the design.
-The reference architeture is written using [sailsjs](http://sailsjs.org/) a nodejs MVC framework.
-
+![image](docs/Architecture.png)
 
 ## Design
+
 The design/spec of CAADE is presented in the ./design directory and can be accessed [here](design/README.md)
 
 The design uses [plantuml](http://plantuml.com/) and [markdown language](https://guides.github.com/features/mastering-markdown/)
@@ -23,6 +22,9 @@ To generate the graphic files (*.png) for the plantuml files (*.puml) do the fol
 ```
 
 
-## Application
-TBD
+## Implementations
+
+This repository contains the design and a simple interactive reference architecture of the design.
+The reference architecture is written using [sailsjs](http://sailsjs.org/) a nodejs MVC framework.
+
 
