@@ -1,0 +1,28 @@
+@startuml
+
+
+partition "ApplicationDeveloper"  #cccccc {
+  (*) --> "Create new project"
+  "Create new project" --> "Use existing services"
+  "Create new project" --> "Develop new service"
+  "Develop new service" --> "Work on project"
+  "Work on project" --> "Deploy project"
+}
+
+partition "Cloudlet" #aaffff {
+  "Work on project" --> "Use service"
+  "Develop new service" --> "Manage Infrastructure"
+  "Develop new service" --> "Manage Services"
+  "Deploy project" --> "Manage Services"
+  "Use existing services" --> "Use service"
+  "Use existing services" --> "Work on project"
+}
+partition "C3" #aaffaa {
+  "Manage Services" --> " Manage Services"
+  "Manage Infrastructure" --> " Manage Infrastructure"
+}
+partition "Remote Cloudlet" #ffaa44 {
+  "Manage Services" --> " Manage Services "
+}
+
+@enduml

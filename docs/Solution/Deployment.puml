@@ -1,0 +1,42 @@
+
+@startuml
+
+package Cloudlet #aaffff {
+    component C3
+    component CloudletManager
+    interface REST
+    interface CLI
+    interface Web
+}
+
+rectangle Ports {
+  80 .. Web
+  5433 .. REST
+}
+REST -- CloudletManager
+CLI -- CloudletManager
+Web -- CloudletManager
+CloudletManager -> C3 : 5432
+
+package FederatedConnectivity #aaffaa {
+  component FederatedOrchestratedCloud
+  component DataCoordinator
+  component IdentityManagement
+  component SecurityManagement
+}
+
+CloudletManager <--> FederatedOrchestratedCloud :5435
+CloudletManager <--> DataCoordinator : 5436
+CloudletManager <--> IdentityManagement
+CloudletManager <--> SecurityManagement
+
+cloud PublicCloud {
+}
+
+cloud PrivateCloud {
+}
+
+C3 - PublicCloud
+C3 - PrivateCloud
+
+@enduml

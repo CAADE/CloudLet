@@ -1,0 +1,14 @@
+@startuml
+
+package "CIT" {
+    interface "CIT" {
+
+    }
+    CLI ()-- "CIT"
+    REST ()-- "CIT"
+    Web ()-- "CIT"
+
+}
+
+
+@enduml

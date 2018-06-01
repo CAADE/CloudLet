@@ -1,0 +1,35 @@
+@startuml
+
+left to right direction
+
+:OperationsManager: as Actor
+
+rectangle "Cloudlet" #ffffaa {
+    (Manage Policies) as U1
+    (Manage Infrastructure) as U2
+    (Manage Cloudlet) as U3
+    (Add Cloudlet) as U4
+}
+
+rectangle "C3" #aaffaa {
+    (Manage Policies) as U12
+    (Manage Infrastructure) as U22
+}
+
+rectangle "Remote Cloudlet" #ffaa44 {
+    (Manage Policies) as U13
+    (Manage Cloudlet) as U33
+}
+
+Actor --> U1
+Actor --> U2
+Actor --> U3
+Actor --> U4
+
+U1 --> U12
+U2 --> U22
+
+U1 --> U13
+U3 --> U33
+
+@enduml

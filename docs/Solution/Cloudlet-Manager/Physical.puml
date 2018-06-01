@@ -1,0 +1,12 @@
+@startuml
+
+package "Cloudlet Manager" {
+    component Manager
+    interface REST
+    interface Web
+    interface CLI
+    CLI -- Manager
+    REST -- Manager
+    Web -- Manager
+}
+@enduml

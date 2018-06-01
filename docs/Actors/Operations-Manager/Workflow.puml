@@ -1,0 +1,29 @@
+@startuml
+|OperationsManager|
+start
+fork
+:Install Cloudlet A;
+|#aaffff|Cloudlet A|
+:Register C3 A\nwith Cloudlet;
+fork again
+|OperationsManager|
+:Install Cloudlet B;
+|#aaffaa|Cloudlet B|
+:Register C3 B\nwith Cloudlet;
+end fork
+|OperationsManager|
+:Create Federation;
+|Cloudlet A|
+:Add Cloudlet;
+|Cloudlet B|
+:Register Cloudlet;
+|OperationsManager|
+:Update Global Policy;
+|Cloudlet A|
+:Manage Policies;
+|OperationsManager|
+:Day to Day Operations;
+|Cloudlet A|
+:Manage Infrastructure;
+
+@enduml

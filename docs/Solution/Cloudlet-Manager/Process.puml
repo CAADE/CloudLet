@@ -1,0 +1,21 @@
+@startuml
+
+partition "Operations Manager" #cccccc {
+    (*) --> "Install Cloudlet"
+}
+
+partition "Cloudlet Manager" #ffffaa {
+    "Install Cloudlet" --> "Register Cloudlet"
+    "Register Cloudlet" --> "Manage Policy"
+    "Register Cloudlet" --> "Manage Service"
+    "Register Cloudlet" --> "Manage Application Stack"
+}
+
+partition "Federated Cloudlet" #aaffaa {
+    "Register Cloudlet" --> "Add Cloudlet"
+    "Manage Policy" --> "Manage Global Policy"
+    "Manage Service" --> "Propagate Change"
+    "Manage Application Stack" --> "Propagate Change"
+}
+
+@enduml

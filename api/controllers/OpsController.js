@@ -1,16 +1,16 @@
 /**
  * OpsController
  *
- * @description :: Server-side logic for managing the Actor OperationsManager
+ * @description :: Server-side logic for managing the Actor Operations-Manager
  * @help        :: See http://sailsjs.org/#!/documentation/concepts/Controllers
  */
 
 module.exports = {
 
   /**
-   * `OpsController.addCloudlet()`
+   * `OpsController.method()`
    */
-  addCloudlet: function (req, res) {
+  method: function (req, res) {
 
   }
 }

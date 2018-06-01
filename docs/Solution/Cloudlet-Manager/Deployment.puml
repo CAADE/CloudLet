@@ -1,0 +1,28 @@
+@startuml
+
+package  "Cloudlet Manager" {
+    node CloudletManager {
+        database cloudletDB
+        component cloudlet
+        cloudlet - cloudletDB
+        CLI -- cloudlet
+        REST -- cloudlet
+        Web -- cloudlet
+    }
+}
+rectangle Ports {
+  3100 .. REST
+}
+
+package FederatedConnectivity {
+}
+
+cloud PublicCloud {
+    interface C3
+}
+
+cloudlet -- C3 : 3000
+
+cloudlet -- FederatedConnectivity
+
+@enduml

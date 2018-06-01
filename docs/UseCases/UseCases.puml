@@ -1,0 +1,45 @@
+@startuml
+:Operations Manager: as Ops
+:End User: as User
+:Stack Developer: as Stack
+
+
+left to right direction
+
+rectangle "Cloudlet" #aaffaa {
+(Manage Cloudlet) as (RC1)
+(Manage Local Policies) as (ULP)
+(Manage Federated Policies) as (USP)
+(Use Service) as US
+(Manage Service) as RS
+(Manage\nInfrastructure) as RI
+
+Ops --> RC1
+Ops --> ULP
+User -> RI
+
+}
+
+
+rectangle "Cloud" #aaffff {
+(Add Cloudlet) as (AC1)
+(Manage Federated Policies ) as UCP
+(Use Service ) as USA
+(Manage Service ) as RSA
+(Manage\nInfrastructure ) as RIM
+Ops -> AC1
+AC1 <--> RC1
+Ops -> UCP
+UCP <--> USP
+RIM <--> RI
+User -> RIM
+}
+
+User --> US
+User --> USA
+
+Stack --> RS
+Stack --> RSA
+RS <--> RSA
+
+@enduml

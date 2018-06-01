@@ -1,0 +1,25 @@
+@startuml
+left to right direction
+
+:Stack Developer: as Admin
+
+
+rectangle "Cloudlet" #aaffaa {
+  Admin --> (Manage Application Stack)
+  Admin --> (Use Application Stack)
+  Admin --> (Manage Services)
+  Admin --> (Use Service)
+}
+
+rectangle "C3" #ffffaa {
+  (Manage Application Stack) --> ( Manage Application Stack) : Proxy
+  (Use Application Stack) --> ( Use Application Stack) : Proxy
+  (Manage Services) --> ( Manage Services) : Proxy
+  (Use Service) --> ( Use Service) : Proxy
+}
+
+rectangle "Remote Cloudlet" #ffaa44 {
+(Manage Application Stack) --> ( Manage Application Stack )
+  (Manage Services) --> ( Manage Services )
+}
+@enduml

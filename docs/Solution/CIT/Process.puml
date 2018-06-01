@@ -1,0 +1,18 @@
+@startuml
+
+partition "CIT" {
+
+}
+
+partition SubSystem  #cccccc {
+  (*) --> "Create Project"
+  --> "Write Code"
+}
+
+partition "CIT" {
+  "Write Code" --> "Test Code"
+  "Test Code" --> "Deploy Code"
+  "Deploy Code" --> (*)
+}
+
+@enduml

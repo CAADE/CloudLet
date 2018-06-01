@@ -1,0 +1,9 @@
+@startuml
+Actor "actorName" as A
+
+box "Manage-Policies" #lightblue
+participant "cloudlet" as S
+A -> S : Manage-Federated-Policies
+end box
+
+@enduml

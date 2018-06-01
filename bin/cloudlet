@@ -4,8 +4,7 @@ var program =  require('commander');
 
 program
   .version("0.0.1")
-  .command('appdev <command> [args]', 'Application Developer interface')
-  .command('ops <command> [args]', 'Operation Manager interface')
-  .command('stackdev <command> [args]', 'Stack Developer interfacce')
+  # .command('init', 'initalize Caade on your machine')
+  # .command('stack <command> <stackName>', 'Work with applications')
   .parse(process.argv);
 

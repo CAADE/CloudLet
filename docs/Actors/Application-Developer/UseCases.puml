@@ -1,0 +1,35 @@
+@startuml
+
+left to right direction
+
+:ApplicationDeveloper: as Actor
+
+rectangle "Cloudlet" #aaffaa{
+    (Manage Services) as U1
+    (Use Service) as U3
+    (Manage Infrastructure) as U2
+}
+
+rectangle "C3" #ffffaa {
+  ( Manage Services) as U13
+  ( Manage Infrastructure) as U23
+}
+
+rectangle "Remote Cloudlet" #ffaa44 {
+  ( Manage Services ) as U14
+}
+
+rectangle "SDI" #cccccc {
+  (Request Infrastructure) as U4
+}
+
+Actor --> U1
+Actor --> U2
+Actor --> U3
+U1 -> U2
+U1 -> U13 : Proxy
+U23 --> U4
+U2 --> U23 : Proxy
+U1 --> U14
+
+@enduml

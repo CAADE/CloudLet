@@ -1,0 +1,37 @@
+@startuml
+|#dddddd|ApplicationDeveloper|
+start
+:Create a project;
+|#ffffaa|Cloudlet|
+:Find Services;
+|#aaffaa|C3|
+:Find Services;
+|ApplicationDeveloper|
+if (service available) then (yes)
+    :Use current service;
+else (no)
+    :Create new service;
+    |Cloudlet|
+    :Manage Infrastructure;
+    |C3|
+    :Manage Infrastructure;
+    |Cloudlet|
+    :Manage Services;
+    fork
+    |C3|
+    :Manage Services;
+    fork again
+    |#ffaa44|Remote Cloudlet|
+    :Manage Services;
+    end fork
+endif
+|ApplicationDeveloper|
+:Work on Project;
+|Cloudlet|
+:Use Services;
+|ApplicationDeveloper|
+:Deploy project;
+|#ffffaa|Cloudlet|
+:Use Services;
+stop
+@enduml

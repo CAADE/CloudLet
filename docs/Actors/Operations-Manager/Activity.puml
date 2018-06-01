@@ -1,0 +1,24 @@
+@startuml
+
+
+partition "OperationsManager"  #cccccc {
+  (*) --> "Form a Cloudlet Federation"
+}
+
+partition "Cloudlet" #ffffaa {
+  "Form a Cloudlet Federation" --> "Add Cloudlet"
+  "Add Cloudlet" --> "Manage Cloudlets"
+  "Add Cloudlet" --> "Manage Infrastructure"
+  "Add Cloudlet" --> "Manage Policies"
+}
+
+partition "C3" #aaffaa {
+  "Manage Policies" --> " Manage Policies "
+  "Manage Infrastructure" --> " Manage Infrastructure "
+}
+
+partition "Remote Cloudlet" #ffaa44 {
+  "Manage Cloudlets" --> " Manage Cloudlets"
+  "Manage Policies" --> " Manage Policies"
+}
+@enduml

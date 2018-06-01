@@ -1,0 +1,29 @@
+@startuml
+
+cloud "Base Cloud" #aaffff {
+SDI - [SDI Base]
+[SDI Base]
+[SDN Base]
+[Data Fabric]
+}
+
+cloud "Cloudlet 1" #aaffaa {
+[C3 1] - [SDI Local 1]
+[SDI Local 1] --> [Federated SDN 1]
+[SDI Local 1] --> [SDS 1]
+[Federated SDN 1] -> [SDN Base]
+[SDS 1] -> [Data Fabric]
+[C3 1] - [SDI]
+}
+
+cloud "Cloudlet 2 " #ffffaa {
+[C3 2] - [SDI Local 2]
+[SDI Local 2] --> [Federated SDN 2]
+[SDI Local 2] --> [SDS 2]
+[Federated SDN 2] -> [SDN Base]
+[SDS 2] -> [Data Fabric]
+[C3 2] - [SDI]
+}
+
+@enduml
+

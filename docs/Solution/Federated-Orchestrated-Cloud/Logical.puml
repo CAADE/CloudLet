@@ -1,0 +1,49 @@
+@startuml
+
+package "Federated Orchestrated Cloud" {
+  interface "Federated Orchestrated Cloud" {
+  }
+CLI ()-- "Federated Orchestrated Cloud"
+REST ()-- "Federated Orchestrated Cloud"
+Web ()-- "Federated Orchestrated Cloud"
+
+}
+
+
+
+left to right direction
+
+package "Cloudlet 1" #ffaaaa {
+
+  class "SNAP (Telemetry)" as STS
+  class "Analytics" as AS
+  class "C3" as CMPS
+  class "SDI" as SDIS
+}
+
+package "Federated Orchestrated Cloud" #aaffaa {
+class "Orchestrator" as OW
+class "SNAP (Telemetry) Composite Data Cloud" as STF
+class "Analytics" as FOCA
+}
+
+package "Cloudlet 2"  #aaaaff {
+  class "SDI" as SDIM
+  class "SNAP (Telemetry)" as STM
+  class "Analytics" as AM
+  class "C3" as CMPM
+}
+SDIS --> STS
+SDIM --> STM
+CMPS -> SDIS
+CMPM -> SDIM
+AS --> STF
+STS -> AS
+STM -> AM
+AM --> STF
+STF --> FOCA
+FOCA --> OW
+OW <--> CMPS
+OW <--> CMPM
+
+@enduml

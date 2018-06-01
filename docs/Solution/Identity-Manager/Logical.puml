@@ -1,0 +1,13 @@
+@startuml
+
+package "Identity Manager" {
+  interface "Identity Manager" {
+  }
+}
+
+CLI ()-- "Identity Manager"
+"REST API" ()-- "Identity Manager"
+"Web Portal" ()-- "Identity Manager"
+
+
+@enduml
