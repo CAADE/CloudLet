@@ -10,7 +10,7 @@ actor :User: <<Person>>
 actor :SubSystem: <<Person>>
 
 
-rectangle "Trust-Management" {
+rectangle "Trust-Manager" {
 UseCase UC1 <<Main>> as "Use Case1"
 UseCase UC2  as "Use Case2"
 

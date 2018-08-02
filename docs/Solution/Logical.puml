@@ -16,7 +16,7 @@ package CloudLet1 #lightgreen {
 
 package "Federation Connectivity" as FC #lightblue {
     class "Telemetry Aggregator" as TA
-    package "Trust-Management" #ffffff {
+    package "Trust-Manager" #ffffff {
       note as N1
       TXT
       Key Management

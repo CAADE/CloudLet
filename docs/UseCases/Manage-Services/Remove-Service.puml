@@ -1,0 +1,14 @@
+@startuml
+Actor "actorName" as A
+
+box "Manage-Services" #lightblue
+participant CLI as CLI
+participant Web as Web
+participant "cloudlet" as S
+A -> CLI : cloudlet-service-remove()
+CLI -> S : service/remove()
+A -> Web : service/remove()
+Web -> S : service/remove()
+end box
+
+@enduml

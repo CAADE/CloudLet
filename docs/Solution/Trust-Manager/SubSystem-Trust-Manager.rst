@@ -1,7 +1,7 @@
-.. _SubSystem-Trust-Management:
+.. _SubSystem-Trust-Manager:
 
-Trust Management
-================
+Trust Manager
+=============
 
 The Trust Management is responsible for the managing of secure keys in the TPM.
 
@@ -22,7 +22,7 @@ Users
 Uses
 ----
 
-* :ref:`SubSystem-Trust-Management`
+* :ref:`SubSystem-Trust-Manager`
 
 Interface
 ---------

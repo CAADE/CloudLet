@@ -1,0 +1,13 @@
+@startuml
+
+package "cloudlet-manager" #lightblue {
+    interface "cloudlet-manager" {
+
+    }
+    CLI ()-- "cloudlet-manager" : 5000
+    REST ()-- "cloudlet-manager" : 3000
+    Web ()-- "cloudlet-manager" : 80
+}
+
+
+@enduml

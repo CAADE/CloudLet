@@ -1,6 +1,6 @@
 @startuml
 
-partition "Trust-Management" {
+partition "Trust-Manager" {
 
 }
 
@@ -9,7 +9,7 @@ partition SubSystem  #cccccc {
   --> "Write Code"
 }
 
-partition "Trust-Management" {
+partition "Trust-Manager" {
   "Write Code" --> "Test Code"
   "Test Code" --> "Deploy Code"
   "Deploy Code" --> (*)

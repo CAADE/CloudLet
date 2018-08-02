@@ -1,0 +1,14 @@
+@startuml
+Actor "actorName" as A
+
+box "Manage-Policies" #lightblue
+participant CLI as CLI
+participant Web as Web
+participant "cloudlet" as S
+A -> CLI : cloudlet-policy-evaluate()
+CLI -> S : policy/evaluate()
+A -> Web : policy/evaluate()
+Web -> S : policy/evaluate()
+end box
+
+@enduml

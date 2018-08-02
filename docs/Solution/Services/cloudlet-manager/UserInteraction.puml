@@ -1,0 +1,6 @@
+@startuml
+actor User
+
+User -> "cloudlet-manager": UseCase
+
+@enduml

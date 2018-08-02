@@ -2,17 +2,13 @@
 
 left to right direction
 
-skinparam usecase {
-  BackgroudnColor #ffffaa
-  BackgroundColor<<Main>> #lightblue
-}
 actor :Operations Manager:
 
-rectangle "Cloudlet Manager" {
-UseCase UC1 <<Main>> as "Add Cloudlet"
-UseCase UC2  as "Manage Cloudlet"
+rectangle "Cloudlet Manager" #lightblue {
+UseCase UC1 as "Add Cloudlet"
+UseCase UC2 as "Manage Cloudlet"
 
-UC1 --> UC2
+UC1 -> UC2
 }
 
 :Operations Manager: --> UC1

@@ -1,0 +1,13 @@
+{
+  "main": "index.js",
+  "scripts": {
+    "start": "micro",
+    "build": "docker build . -t ${CAADE_REGISTRY}/cloudlet/cloudlet-manager",
+    "deploy": "docker push ${CAADE_REGISTRY}/cloudlet/cloudlet-manager",
+    "publish": "docker push ${CAADE_REGISTRY}/cloudlet/cloudlet-manager"
+  },
+  "dependencies": {
+    "micro": "latest",
+    "node-fetch": "latest"
+  }
+}

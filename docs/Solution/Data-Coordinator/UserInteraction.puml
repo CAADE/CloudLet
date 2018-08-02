@@ -1,6 +1,8 @@
 @startuml
 actor User
 
-User -> "Data Coordinator": UseCase
+User -> "Data Coordinator": Move Data
+User -> "Data Coordinator": Move Application
+User -> "Data Coordinator": Exchange Data
 
 @enduml

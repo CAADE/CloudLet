@@ -23,7 +23,7 @@ These are the micro-services of the cloudlet Solution that are used to implement
 Sub Systems
 -----------
 
-* :ref:`SubSystem-Trust-Management`
+* :ref:`SubSystem-Trust-Manager`
 * :ref:`SubSystem-Cloudlet-Manager`
 * :ref:`SubSystem-Data-Coordinator`
 * :ref:`SubSystem-Federated-Orchestrated-Cloud`

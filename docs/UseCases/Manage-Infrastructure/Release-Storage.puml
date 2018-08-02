@@ -1,0 +1,14 @@
+@startuml
+Actor "actorName" as A
+
+box "Manage-Infrastructure" #lightblue
+participant CLI as CLI
+participant Web as Web
+participant "cloudlet" as S
+A -> CLI : cloudlet-storage-release()
+CLI -> S : storage/release()
+A -> Web : storage/release()
+Web -> S : storage/release()
+end box
+
+@enduml

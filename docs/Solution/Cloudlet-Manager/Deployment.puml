@@ -1,7 +1,7 @@
 @startuml
 
-package  "Cloudlet Manager" {
-    node CloudletManager {
+package  "Cloudlet Manager" #lightblue {
+    node CloudletManager #white {
         database cloudletDB
         component cloudlet
         cloudlet - cloudletDB
@@ -14,7 +14,7 @@ rectangle Ports {
   3100 .. REST
 }
 
-package FederatedConnectivity {
+package FederatedConnectivity #lightblue {
 }
 
 cloud PublicCloud {

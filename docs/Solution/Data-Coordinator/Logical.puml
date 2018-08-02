@@ -1,13 +1,33 @@
 @startuml
 
-package "Data Coordinator" {
-  interface "Data Coordinator" {
+package "Data Coordinator" #lightblue {
+  interface "Data Coordinator" as DC {
+  }
+  class "Data Exchange" as DE {
+  }
+  class "Data Mover" as DM {
+  }
+  class "Application Mover" as AM {
   }
 }
 
-CLI ()-- "Data Coordinator"
-"REST API" ()-- "Data Coordinator"
-"Web Portal" ()-- "Data Coordinator"
+package "Federated Orchestrated Cloud" as FOC #lightgreen {
+}
 
+package "Cloudlet" as Cloudlet #pink {
+}
+
+CLI ()-- DC
+REST ()--  DC
+Web ()-- DC
+DC --> DE
+DC --> DM
+DC --> AM
+
+FOC --> DC
+
+DE --> Cloudlet
+DM --> Cloudlet
+AM --> Cloudlet
 
 @enduml

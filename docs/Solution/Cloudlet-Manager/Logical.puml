@@ -1,6 +1,6 @@
 @startuml
 
-package "Cloudlet Manager" {
+package "Cloudlet Manager" #lightblue {
     interface "Cloudlet Manager" {
     }
 

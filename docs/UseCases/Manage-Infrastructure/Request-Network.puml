@@ -1,0 +1,14 @@
+@startuml
+Actor "actorName" as A
+
+box "Manage-Infrastructure" #lightblue
+participant CLI as CLI
+participant Web as Web
+participant "cloudlet" as S
+A -> CLI : cloudlet-network-request()
+CLI -> S : network/request()
+A -> Web : network/request()
+Web -> S : network/request()
+end box
+
+@enduml

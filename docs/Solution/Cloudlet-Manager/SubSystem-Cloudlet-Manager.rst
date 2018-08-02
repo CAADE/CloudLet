@@ -8,7 +8,8 @@ Once the Cloud is connected to th Cloud Federation it will be known as a Cloudle
 Use Cases
 ---------
 
-*
+* :ref:`UseCase-Manage-Cloudlet`
+* :ref:`Scenario-Add-Cloudlet`
 
 .. image:: UseCases.png
 
@@ -23,6 +24,7 @@ Uses
 ----
 
 * :ref:`SubSystem-Cloudlet-Manager`
+* :ref:`SubSystem-Federated-Orchestrated-Cloud`
 
 Interface
 ---------

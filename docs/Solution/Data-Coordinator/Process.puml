@@ -1,18 +1,34 @@
 @startuml
 
+partition "Data Coordinator" #lightblue {
+
+}
+
+partition "Federated Orchestrated Cloud"  #lightgrey {
+  (*) --> "Deploy Service"
+}
+
 partition "Data Coordinator" {
-
+  "Deploy Service" --> "Coordinate Data"
+  "Coordinate Data" --> "Evaluate Policies"
+  "Evaluate Policies" --> "Determine Method"
+  "Determine Method" -> "Move Data"
+  "Determine Method" -> "Move Application"
+  "Determine Method" ---> "Set Up Data Exchange"
+  "Set Up Data Exchange" -> "Create Aggregator"
 }
 
-partition SubSystem  #cccccc {
-  (*) --> "Create Project"
-  --> "Write Code"
+partition "Cloudlet A" #pink {
+  "Set Up Data Exchange" -> "Create Exchange Source A"
+}
+
+partition "Cloudlet B" #lightgreen {
+  "Set Up Data Exchange" -> "Create Exchange Source B"
 }
 
 partition "Data Coordinator" {
-  "Write Code" --> "Test Code"
-  "Test Code" --> "Deploy Code"
-  "Deploy Code" --> (*)
+  "Create Aggregator" ---> "Run Application"
+  "Create Exchange Source A" ---> "Run Application"
+  "Create Exchange Source B" ---> "Run Application"
 }
-
 @enduml

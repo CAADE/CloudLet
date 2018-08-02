@@ -15,7 +15,7 @@ left to right direction
 
 package "Cloudlet 1" #pink {
 
-  class "SNAP (Telemetry)" as STS
+  class "Telemetry" as STS
   class "Analytics" as AS
   class "C3" as CMPS
   class "SDI" as SDIS
@@ -23,13 +23,13 @@ package "Cloudlet 1" #pink {
 
 package "Federated Orchestrated Cloud" #lightgreen {
 class "Orchestrator" as OW
-class "SNAP (Telemetry) Composite Data Cloud" as STF
+class "Telemetry Composite Data Cloud" as STF
 class "Analytics" as FOCA
 }
 
 package "Cloudlet 2"  #aaaaff {
   class "SDI" as SDIM
-  class "SNAP (Telemetry)" as STM
+  class "Telemetry" as STM
   class "Analytics" as AM
   class "C3" as CMPM
 }

@@ -46,7 +46,7 @@ Where is data impacted:
 * :ref:`SubSystem-Federated-Orchestrated-Cloud` - Federated Orchestrated to schedule service requests acrosss multiple clouds
 * :ref:`SubSystem-Data-Coordinator` - Coordinates data between Clouds
 * :ref:`SubSystem-Identity-Manager` - Manages Identity across multiple clouds
-* :ref:`SubSystem-Trust-Management` - Manages Securee keys in TPMs across multiple data centers.
+* :ref:`SubSystem-Trust-Manager` - Manages Securee keys in TPMs across multiple data centers.
 * `Hybrid Cloud <http://c3.readthedocs.io>`_ - Common Cloud Core including a Cloud Management Platform
 
 Process Architecture

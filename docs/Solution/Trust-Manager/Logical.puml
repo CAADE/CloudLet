@@ -1,12 +1,12 @@
 @startuml
 
-package "Trust-Management" {
-    interface "Trust-Management" {
+package "Trust-Manager" {
+    interface "Trust-Manager" {
 
     }
-    CLI ()-- "Trust-Management"
-    REST ()-- "Trust-Management"
-    Web ()-- "Trust-Management"
+    CLI ()-- "Trust-Manager"
+    REST ()-- "Trust-Manager"
+    Web ()-- "Trust-Manager"
 
 }
 

@@ -1,0 +1,13 @@
+@startuml
+
+package "telemetry" #lightblue {
+    interface "telemetry" {
+
+    }
+    CLI ()-- "telemetry" : 5000
+    REST ()-- "telemetry" : 3000
+    Web ()-- "telemetry" : 80
+}
+
+
+@enduml

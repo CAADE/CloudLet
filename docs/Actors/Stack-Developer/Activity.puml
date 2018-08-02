@@ -5,8 +5,16 @@ partition "StackDeveloper"  #cccccc {
   (*) --> "Manage Stack"
 }
 
-partition "Cloudlet" #lightgreen {
-  "Start Here" --> "Here"
+partition "Cloudlet A" #lightgreen {
+  "Manage Stack" --> "Publish Stack"
+  "Manage Stack" --> "Destroy Stack"
+  "Publish Stack" -> "Propigate Stack"
+  "Destroy Stack" --> "Propigate Destruction"
+}
+
+partition "Cloudlet B" #pink {
+  "Propigate Stack" -> "Publish Stack Local"
+  "Propigate Destruction" -> "Destroy Stack Local"
 }
 
 @enduml

@@ -3,8 +3,11 @@
 Application Developer
 =====================
 
-The Application Developer develops cloud aware applications. This is the same actor
-as in the `C3 Architecture <http://c3.readthedocs.io/en/latest/Actors/ApplicationDeveloper/Actor-ApplicationDeveloper.html>`_.
+.. _C3: http://c3.readthedocs.io
+.. _C3-App-Dev: http://c3.readthedocs.io/en/latest/Actors/ApplicationDeveloper/Actor-ApplicationDeveloper.html
+
+The Application Developer develops cloud aware applications. This is the same actor as in the C3_ architecture which
+can be found in the architect C3-App-Dev_ .
 
 Use Cases
 ---------
@@ -17,7 +20,7 @@ Use Cases
 Activities
 ----------
 
-Application Develoer will typically use existing services as well as develop new services.
+Application Developer will typically use existing services as well as develop new services.
 In order to use existing services they can look up the services or service stacks in the Cloudlet
 service registry either locally or globally. One the service or service stacks is selected. It
 can be used by the Application Developer to developer their application.
