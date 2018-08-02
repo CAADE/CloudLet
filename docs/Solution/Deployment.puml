@@ -1,7 +1,7 @@
 
 @startuml
 
-package Cloudlet #aaffff {
+package Cloudlet #lightblue {
     component C3
     component CloudletManager
     interface REST
@@ -18,7 +18,7 @@ CLI -- CloudletManager
 Web -- CloudletManager
 CloudletManager -> C3 : 5432
 
-package FederatedConnectivity #aaffaa {
+package FederatedConnectivity #lightgreen {
   component FederatedOrchestratedCloud
   component DataCoordinator
   component IdentityManagement

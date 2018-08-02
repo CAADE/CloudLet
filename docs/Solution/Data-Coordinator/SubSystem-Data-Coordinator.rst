@@ -15,14 +15,14 @@ Use Cases
 Users
 -----
 
-* :ref:`Actor-User`
+* :ref:`Actor-Operations-Manager`
 
 .. image:: UserInteraction.png
 
 Uses
 ----
 
-* :ref:`Data-Coordinator`
+* :ref:`SubSystem-Data-Coordinator`
 
 Interface
 ---------

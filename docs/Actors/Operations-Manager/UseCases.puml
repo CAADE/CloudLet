@@ -11,7 +11,7 @@ rectangle "Cloudlet" #ffffaa {
     (Add Cloudlet) as U4
 }
 
-rectangle "C3" #aaffaa {
+rectangle "C3" #lightgreen {
     (Manage Policies) as U12
     (Manage Infrastructure) as U22
 }

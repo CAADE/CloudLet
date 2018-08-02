@@ -1,7 +1,7 @@
 .. _SubSystem-Identity-Manager:
 
-Identity-Manager
-============
+Identity Manager
+================
 
 The Identity Manager handles identity across multiple clouds.
 
@@ -15,14 +15,14 @@ Use Cases
 Users
 -----
 
-* :ref:`Actor-User`
+* :ref:`Actor-Operations-Manager`
 
 .. image:: UserInteraction.png
 
 Uses
 ----
 
-* :ref:`Identity-Manager`
+* :ref:`SubSystem-Identity-Manager`
 
 Interface
 ---------

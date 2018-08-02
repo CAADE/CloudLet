@@ -9,7 +9,7 @@ partition "ApplicationDeveloper"  #cccccc {
   "Work on project" --> "Deploy project"
 }
 
-partition "Cloudlet" #aaffff {
+partition "Cloudlet" #lightblue {
   "Work on project" --> "Use service"
   "Develop new service" --> "Manage Infrastructure"
   "Develop new service" --> "Manage Services"
@@ -17,7 +17,7 @@ partition "Cloudlet" #aaffff {
   "Use existing services" --> "Use service"
   "Use existing services" --> "Work on project"
 }
-partition "C3" #aaffaa {
+partition "C3" #lightgreen {
   "Manage Services" --> " Manage Services"
   "Manage Infrastructure" --> " Manage Infrastructure"
 }

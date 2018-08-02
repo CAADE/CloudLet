@@ -1,4 +1,4 @@
-.. _Operations-Manager:
+.. _Actor-Operations-Manager:
 
 Actor Operations Manager
 ========================
@@ -13,8 +13,7 @@ Use Cases
 ---------
 
 * :ref:`UseCase-Manage-Cloudlet`
-* :ref:`UseCase-ManageInfrastructure`
-* :ref:`UseCase-ManagePolicies`
+* :ref:`UseCase-Manage-Policies`
 
 .. image:: UseCases.png
 

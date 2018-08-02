@@ -13,7 +13,7 @@ Web ()-- "Federated Orchestrated Cloud"
 
 left to right direction
 
-package "Cloudlet 1" #ffaaaa {
+package "Cloudlet 1" #pink {
 
   class "SNAP (Telemetry)" as STS
   class "Analytics" as AS
@@ -21,7 +21,7 @@ package "Cloudlet 1" #ffaaaa {
   class "SDI" as SDIS
 }
 
-package "Federated Orchestrated Cloud" #aaffaa {
+package "Federated Orchestrated Cloud" #lightgreen {
 class "Orchestrator" as OW
 class "SNAP (Telemetry) Composite Data Cloud" as STF
 class "Analytics" as FOCA

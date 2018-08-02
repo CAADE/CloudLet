@@ -1,32 +1,36 @@
-cloudlet Overview
-====================
+.. _Home:
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Users
-
-   Actor/index
+Cloudlet Overview
+=================
 
 
-.. toctree::
-   :maxdepth: 2
-   :caption: High Level Use Cases
+High Level Use Case
+-------------------
 
-   UseCase/index
-
+* :ref:`UseCase-Manage-Cloudlet`
+* :ref:`UseCase-Manage-Policies`
+* :ref:`UseCase-Manage-Services`
+* :ref:`UseCase-Use-Service`
 
 .. image:: UseCases/UseCases.png
+
+Users
+-----
+
+* :ref:`Actor-Application-Developer`
+* :ref:`Actor-Operations-Manager`
+* :ref:`Actor-Stack-Developer`
 
 Logical Architecture
 --------------------
 
 .. image:: Architecture.png
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Sub System
-
-   Solution/index
+* :ref:`SubSystem-Trust-Management`
+* :ref:`SubSystem-Cloudlet-Manager`
+* :ref:`SubSystem-Data-Coordinator`
+* :ref:`SubSystem-Federated-Orchestrated-Cloud`
+* :ref:`SubSystem-Identity-Manager`
 
 Process Architecture
 --------------------

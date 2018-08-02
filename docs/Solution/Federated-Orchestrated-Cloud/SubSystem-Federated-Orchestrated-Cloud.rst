@@ -18,14 +18,14 @@ Use Cases
 Users
 -----
 
-* :ref:`Actor-User`
+* :ref:`Actor-Operations-Manager`
 
 .. image:: UserInteraction.png
 
 Uses
 ----
 
-* :ref:`Federated-Orchestrated-Cloud`
+* :ref:`SubSystem-Federated-Orchestrated-Cloud`
 
 Interface
 ---------

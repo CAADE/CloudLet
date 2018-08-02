@@ -15,14 +15,14 @@ Use Cases
 Users
 -----
 
-* :ref:`Actor-User`
+* :ref:`Actor-Operations-Manager`
 
 .. image:: UserInteraction.png
 
 Uses
 ----
 
-* :ref:`Cloudlet-Manager`
+* :ref:`SubSystem-Cloudlet-Manager`
 
 Interface
 ---------

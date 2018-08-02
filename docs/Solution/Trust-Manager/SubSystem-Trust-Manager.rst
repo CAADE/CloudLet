@@ -1,9 +1,9 @@
-.. _SubSystem-CIT:
+.. _SubSystem-Trust-Management:
 
-CIT
-===
+Trust Management
+================
 
-The CIT is responsible for the managing of secure keys in the TPM.
+The Trust Management is responsible for the managing of secure keys in the TPM.
 
 Use Cases
 ---------
@@ -15,14 +15,14 @@ Use Cases
 Users
 -----
 
-* :ref:`Actor-User`
+* :ref:`Actor-Operations-Manager`
 
 .. image:: UserInteraction.png
 
 Uses
 ----
 
-* :ref:`CIT`
+* :ref:`SubSystem-Trust-Management`
 
 Interface
 ---------

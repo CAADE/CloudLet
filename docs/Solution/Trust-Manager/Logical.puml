@@ -1,0 +1,14 @@
+@startuml
+
+package "Trust-Management" {
+    interface "Trust-Management" {
+
+    }
+    CLI ()-- "Trust-Management"
+    REST ()-- "Trust-Management"
+    Web ()-- "Trust-Management"
+
+}
+
+
+@enduml

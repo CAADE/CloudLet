@@ -1,41 +1,31 @@
 @startuml
 
-cloud Cloudlet1 {
-  database "geoA.1" #ffaaaa
+cloud Cloudlet1 #lightgray {
+  database "geoA.1" #pink
   database "geoB.1" #ffff00
 }
-cloud Cloudlet2 {
+
+cloud Cloudlet2 #lightgray {
   database "geoB.2" #ffff00
   database "geoC.2" #00ffff
 }
-cloud Cloudlet3 {
+
+cloud Cloudlet3 #lightgray {
   database "geoC.3" #00ffff
 }
 
 
-cloud Cloud {
-  database geoA #ffaaaa
+cloud Cloud #lightgray {
+  database geoA #pink
   database geoB #ffff00
   database geoC #00ffff
 }
 
+Cloudlet1 --> Cloud
+Cloudlet2 --> Cloud
+Cloudlet3 --> Cloud
 
-Cloudlet1 ==> Cloud
-Cloudlet2 ==> Cloud
-Cloudlet3 ==> Cloud
-
+geoB === geoB.1
+geoB === geoB.2
 @enduml
-
-note right
-Geo Tagging machines
-In different Cloudlets to form
-A DR and BC solution for
-different Geos.
-
-Patent idea –
-Geo Tagging machines
-In different Cloudlets to form
-A DR and BC solution for
-different Geos.
-end note
 

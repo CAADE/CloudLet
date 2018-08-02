@@ -1,7 +1,8 @@
-.. _Application-Developer:
+.. _Actor-Application-Developer:
 
-Actor Application Developer
-===========================
+Application Developer
+=====================
+
 The Application Developer develops cloud aware applications. This is the same actor
 as in the `C3 Architecture <http://c3.readthedocs.io/en/latest/Actors/ApplicationDeveloper/Actor-ApplicationDeveloper.html>`_.
 
@@ -10,7 +11,6 @@ Use Cases
 
 * :ref:`UseCase-Use-Service`
 * :ref:`UseCase-Manage-Services`
-* :ref:`UseCase-Manage-Infrastructure`
 
 .. image:: UseCases.png
 

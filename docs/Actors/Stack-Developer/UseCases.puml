@@ -4,7 +4,7 @@ left to right direction
 :Stack Developer: as Admin
 
 
-rectangle "Cloudlet" #aaffaa {
+rectangle "Cloudlet" #lightgreen {
   Admin --> (Manage Application Stack)
   Admin --> (Use Application Stack)
   Admin --> (Manage Services)

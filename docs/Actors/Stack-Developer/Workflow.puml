@@ -1,7 +1,7 @@
 @startuml
 |StackDeveloper|
 start
-|#aaffaa|Cloudlet|
+|#lightgreen|Cloudlet|
 :proxy;
 |#ffffaa|C3|
 fork
@@ -16,7 +16,7 @@ fork again
 |#ffaa44|Remote Cloudlet|
 :Version Service Stack;
 fork end
-|#aaffff|Application Manager|
+|#lightblue|Application Manager|
 :Test Application Stack;
 :Create an Application;
 :Launch an Application in an environment;

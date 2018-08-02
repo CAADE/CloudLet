@@ -2,8 +2,13 @@
 Actor "actorName" as A
 
 box "Manage-Policies" #lightblue
+participant CLI as CLI
+participant Web as Web
 participant "cloudlet" as S
-A -> S : Manage-Federated-Policies
+A -> CLI : cloudlet-federated-manage()
+CLI -> S : federated/manage()
+A -> Web : federated/manage()
+Web -> S : federated/manage()
 end box
 
 @enduml

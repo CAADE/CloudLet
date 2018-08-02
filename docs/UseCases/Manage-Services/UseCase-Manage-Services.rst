@@ -3,20 +3,25 @@
 Manage Services
 ===============
 
-The Stack Developer manages the services across the cloudlet federation.
-This includes local and global services.
+*Add Description*
 
 Actors
 ------
 
-* _Actors_
+* :ref:`Actor-Operations-Manager`
 
 Activities
 ----------
 
 .. image:: Activities.png
 
-* _Activities_
+* Activity from the diagram
+
+Systems Involved
+----------------
+
+* :ref:`SubSystem-Cloudlet-Manager`
+
 
 Detail Scenarios
 ----------------
@@ -26,10 +31,4 @@ Detail Scenarios
    :maxdepth: 1
 
    Scenario*
-
-Systems Involved
-----------------
-
-* _Systems_
-
 

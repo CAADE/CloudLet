@@ -1,4 +1,4 @@
-describe('Subsystem CIT', function () {
+describe('Subsystem Trust-Management', function () {
   describe('REST Test Cases', function () {
     it('Test REST 1', function (done) {
        done();

@@ -1,7 +1,7 @@
 @startuml
 
-package CloudLet1 #aaffaa {
-    class " Cloudlet Manager "
+package CloudLet1 #lightgreen {
+    class " Cloudlet Manager " as CM1
     class " C3 " {
         Policy Based Scheduling
     }
@@ -9,12 +9,14 @@ package CloudLet1 #aaffaa {
         VMWare
         OpenStack
     }
+    class "Telemetry" as T1
     " C3 " -> " SDI "
     " Cloudlet Manager " -> " C3 "
 }
 
-package "Federation Connectivity" #aaffff {
-    package "CIT" #ffffff {
+package "Federation Connectivity" as FC #lightblue {
+    class "Telemetry Aggregator" as TA
+    package "Trust-Management" #ffffff {
       note as N1
       TXT
       Key Management
@@ -42,16 +44,20 @@ package "Federation Connectivity" #aaffff {
 }
 
 
-package Cloudlet2 #ffaaaa {
+package Cloudlet2 #pink {
     class "SDI"
     class "C3"
-    class "Cloudlet Manager"
+    class "Cloudlet Manager" as CM2
+    class "Telemetry" as T2
+
     "C3" -> "SDI"
     "Cloudlet Manager" -> "C3"
 }
 
-" Cloudlet Manager " -- "Federation Connectivity"
-"Cloudlet Manager" -- "Federation Connectivity"
+T1 --> TA
+T2 --> TA
+CM1 ---> FC
+CM2 --> FC
 
 @enduml
 

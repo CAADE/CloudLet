@@ -11,7 +11,7 @@ partition "Cloudlet Manager" #ffffaa {
     "Register Cloudlet" --> "Manage Application Stack"
 }
 
-partition "Federated Cloudlet" #aaffaa {
+partition "Federated Cloudlet" #lightgreen {
     "Register Cloudlet" --> "Add Cloudlet"
     "Manage Policy" --> "Manage Global Policy"
     "Manage Service" --> "Propagate Change"

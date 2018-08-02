@@ -5,7 +5,7 @@ partition "StackDeveloper"  #cccccc {
   (*) --> "Manage Stack"
 }
 
-partition "Cloudlet" #aaffaa {
+partition "Cloudlet" #lightgreen {
   "Start Here" --> "Here"
 }
 

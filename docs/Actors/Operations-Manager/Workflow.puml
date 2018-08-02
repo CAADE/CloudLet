@@ -3,12 +3,12 @@
 start
 fork
 :Install Cloudlet A;
-|#aaffff|Cloudlet A|
+|#lightblue|Cloudlet A|
 :Register C3 A\nwith Cloudlet;
 fork again
 |OperationsManager|
 :Install Cloudlet B;
-|#aaffaa|Cloudlet B|
+|#lightgreen|Cloudlet B|
 :Register C3 B\nwith Cloudlet;
 end fork
 |OperationsManager|

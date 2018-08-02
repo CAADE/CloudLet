@@ -4,7 +4,7 @@ start
 :Create a project;
 |#ffffaa|Cloudlet|
 :Find Services;
-|#aaffaa|C3|
+|#lightgreen|C3|
 :Find Services;
 |ApplicationDeveloper|
 if (service available) then (yes)

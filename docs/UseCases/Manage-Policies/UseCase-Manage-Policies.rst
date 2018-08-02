@@ -3,19 +3,25 @@
 Manage Policies
 ===============
 
-The Operations Manager manages local and global policies for the different Cloudlets.
+*Add Description*
 
 Actors
 ------
 
-* _Actors_
+* :ref:`Actor-Operations-Manager`
 
 Activities
 ----------
 
 .. image:: Activities.png
 
-* _Activities_
+* Activity from the diagram
+
+Systems Involved
+----------------
+
+* :ref:`SubSystem-Cloudlet-Manager`
+
 
 Detail Scenarios
 ----------------
@@ -25,10 +31,4 @@ Detail Scenarios
    :maxdepth: 1
 
    Scenario*
-
-Systems Involved
-----------------
-
-* _Systems_
-
 

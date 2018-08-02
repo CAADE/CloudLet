@@ -2,10 +2,16 @@ Cloudlet
 ========
 
 .. toctree::
-   :maxdepth: 1
-   :caption: Overview
+  :maxdepth: 2
+  :caption: Introduction
 
-   Solution/Solution
+  Home
+
+.. toctree::
+  :maxdepth: 2
+  :caption: Solution
+
+  Solution/index
 
 .. toctree::
    :maxdepth: 2
@@ -18,10 +24,4 @@ Cloudlet
    :caption: Use Cases
 
    UseCases/index
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Solution
-
-   Solution/index
 

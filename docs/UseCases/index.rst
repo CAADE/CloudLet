@@ -1,5 +1,5 @@
-cloudlet Use Cases
-=========================
+Use Cases
+=========
 
 .. toctree::
     :glob:

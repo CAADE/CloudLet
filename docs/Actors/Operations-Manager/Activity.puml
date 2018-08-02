@@ -12,7 +12,7 @@ partition "Cloudlet" #ffffaa {
   "Add Cloudlet" --> "Manage Policies"
 }
 
-partition "C3" #aaffaa {
+partition "C3" #lightgreen {
   "Manage Policies" --> " Manage Policies "
   "Manage Infrastructure" --> " Manage Infrastructure "
 }

@@ -2,8 +2,13 @@
 Actor "actorName" as A
 
 box "Manage-Policies" #lightblue
+participant CLI as CLI
+participant Web as Web
 participant "cloudlet" as S
-A -> S : Manage-Local-Policies
+A -> CLI : cloudlet-local-manage()
+CLI -> S : local/manage()
+A -> Web : local/manage()
+Web -> S : local/manage()
 end box
 
 @enduml

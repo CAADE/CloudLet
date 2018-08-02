@@ -40,7 +40,7 @@
     "debug": "node debug app.js",
     "design": "java -jar docs/plantuml.jar docs/*.puml docs/**/*.puml",
     "build": "npm update",
-    "build-doc": "npm install -g github-wikito-converter &&  cd design && gwtc . -t Cloudlet",
+    "build-doc": "docker run --rm -v c:/users/dwpulsip/work/Cloudlet/docs:/doc nickjer/docker-sphinx sphinx-build -a -q -b singlehtml . _build_html",
     "test": "npm run lint && npm run custom-tests && echo 'Done.'",
     "custom-tests": "node ./node_modules/mocha/bin/mocha test/bootstrap.test.js test/**/*.test.js",
     "deploy-apps": "node ./deploy/build deploy",
