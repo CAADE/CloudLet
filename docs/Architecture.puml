@@ -1,31 +1,43 @@
 @startuml
 
-cloud Cloudlet1 #lightgray {
-  database "geoA.1" #pink
-  database "geoB.1" #ffff00
-}
-
-cloud Cloudlet2 #lightgray {
-  database "geoB.2" #ffff00
-  database "geoC.2" #00ffff
-}
-
-cloud Cloudlet3 #lightgray {
-  database "geoC.3" #00ffff
-}
-
-
 cloud Cloud #lightgray {
-  database geoA #pink
-  database geoB #ffff00
-  database geoC #00ffff
+  rectangle Cloudlet #lightblue {
+  agent "Cloudlet\nManager"
+  agent "Telemetry\nAggregator"
+  agent "Security\nManager"
+  agent "Data\nCoordinator"
+  agent "Identity\nManager"
+  }
+
+  cloud "C3" as CL1 #white {
+      storage "SDI"
+      storage "PaaS"
+      storage "Automation\nFramework"
+  }
+}
+cloud Cloud as Cloud2 #lightgray {
+  rectangle Cloudlet as C2 #lightblue
+  cloud "C3" as C32 #white
+  C2 <-> C32
 }
 
-Cloudlet1 --> Cloud
-Cloudlet2 --> Cloud
-Cloudlet3 --> Cloud
+cloud Cloud as Cloud3 #lightgray {
+  rectangle Cloudlet as Cl3 #lightblue
+  cloud "C3" as C33 #white
+  Cl3 <-> C33
+}
 
-geoB === geoB.1
-geoB === geoB.2
+cloud "Edge Device" as Cloud4 #lightgray {
+  rectangle Cloudlet as Cl4 #lightblue
+  cloud "C3" as C34 #white
+  Cl4 <-> C34
+}
+
+Cloudlet <--> C2
+Cloudlet <-> Cl3
+Cloudlet <--> Cl4
+
 @enduml
+
+
 

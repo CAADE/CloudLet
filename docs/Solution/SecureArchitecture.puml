@@ -1,0 +1,34 @@
+@startuml
+
+cloud Cloudlet1 #lightgray {
+  storage "Secure\nAnalytics" as SA1 #lightgreen
+  database "geoA.1" #pink
+  database "geoB.1" #ffff00
+}
+
+cloud Cloudlet2 #lightgray {
+  storage "Secure\nAnalytics" as SA2 #lightgreen
+  database "geoB.2" #ffff00
+  database "geoC.2" #00ffff
+}
+
+cloud Cloudlet3 #lightgray {
+  storage "Secure\nAnalytics" as SA3 #lightgreen
+  database "geoC.3" #00ffff
+}
+
+
+cloud Cloud #lightgray {
+  storage "Secure\nAnalytics" as SAC #lightgreen
+  database geoA #pink
+  database geoB #ffff00
+  database geoC #00ffff
+}
+
+SA1 <--> SA2
+SA1 <--> SA3
+SA1 <--> SAC
+
+
+@enduml
+

@@ -2,8 +2,11 @@
 
 Solution Overview
 =================
+
+.. _C3: http://c3.readthedocs.io/
+
 Cloudlets represent an architecture of federated cloud that have a CMP+Automation+PaaS+CloudOS bundle as described
-in the `Common Cloud Core <https://c3.readthedocs.io>`_ architecture. The architecture targets cloud operations
+in the C3_ architecture. The architecture targets cloud operations
 managers and should be as transparent to the end user and developer as possible.
 
 High Level Use Case
@@ -47,20 +50,40 @@ Where is data impacted:
 * :ref:`SubSystem-Data-Coordinator` - Coordinates data between Clouds
 * :ref:`SubSystem-Identity-Manager` - Manages Identity across multiple clouds
 * :ref:`SubSystem-Trust-Manager` - Manages Securee keys in TPMs across multiple data centers.
-* `Hybrid Cloud <http://c3.readthedocs.io>`_ - Common Cloud Core including a Cloud Management Platform
+* :ref:`SubSystem-Telemtry` - Aggregates Telemetry before forwarding it own to a cloudlet telemetry
+* C3_ - Common Cloud Core including a Cloud Management Platform
 
 Process Architecture
 --------------------
+
+There are several activities that an Operations Manager performs with the Cloudlet Architecture including: Setting up
+the federation of clouds to form cloudlets, Establishing Local and Global (Federated Policies), Creating Secure
+geo-fenced domains, and updating and patching infrastructure across the cloudlets.
 
 .. image:: Process.png
 
 Deployment model
 ----------------
 
+The Cloudlet architecture should be as light weight as possible and should integrate existing infrastructure and
+systems with minimal impact on the current system. Existing cloud installations are used to handle the heavy lifting
+in the system. The cloudlet architecture requires a hybrid cloud architecture that includes Cloud Management
+Platform, Automation Framework & Platform as a Service, or the functions defined in those sets of tools.
+
+
+The Cloudlet Architecture has a :ref:`SubSystem-Cloudlet-Manager` is that placed as a connectivity layer between the hybrid cloud
+and the Federated Connectivity. The connectivity gives all of the functionality that is needed to
+federate the different clouds systems together. This let’slets the cloud operate independently from other cloud(s).
+Allowing for them to operate in a disconnected or semi-connected state.
+
 .. image:: Deployment.png
 
 Physical Architecture
 ---------------------
+
+The goal of the architecture is to connect multiple clouds together that are scattered across an organization.
+This could be physically as well as logically. There is the concept of a base Cloud that could offer multiple
+clouds and remote clouds named cloudlets.
 
 .. image:: Physical.png
 

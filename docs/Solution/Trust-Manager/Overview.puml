@@ -1,0 +1,31 @@
+@startuml
+
+
+cloud Cloudlet1 {
+  database "geoA.1" #pink
+  database "geoB.1" #ffff00
+}
+
+cloud Cloudlet2 {
+  database "geoB.2" #ffff00
+  database "geoC.2" #00ffff
+}
+
+cloud Cloudlet3 {
+  database "geoC.3" #00ffff
+}
+
+cloud Cloud {
+  database geoA #pink
+  database geoB #ffff00
+  database geoC #00ffff
+}
+
+Cloudlet1 --> Cloud
+Cloudlet2 --> Cloud
+Cloudlet3 --> Cloud
+
+geoB === geoB.1
+geoB === geoB.2
+
+@enduml
