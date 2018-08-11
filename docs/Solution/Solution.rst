@@ -50,7 +50,7 @@ Where is data impacted:
 * :ref:`SubSystem-Data-Coordinator` - Coordinates data between Clouds
 * :ref:`SubSystem-Identity-Manager` - Manages Identity across multiple clouds
 * :ref:`SubSystem-Trust-Manager` - Manages Securee keys in TPMs across multiple data centers.
-* :ref:`SubSystem-Telemtry` - Aggregates Telemetry before forwarding it own to a cloudlet telemetry
+* :ref:`SubSystem-Telemetry` - Aggregates Telemetry before forwarding it own to a cloudlet telemetry
 * C3_ - Common Cloud Core including a Cloud Management Platform
 
 Process Architecture

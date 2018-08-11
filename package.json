@@ -45,7 +45,7 @@
     "custom-tests": "node ./node_modules/mocha/bin/mocha test/bootstrap.test.js test/**/*.test.js",
     "deploy-apps": "node ./deploy/build deploy",
     "deploy-test": "npm run-script deploy-apps && docker stack deploy --compose-file=./deploy/docker-compose-test.yaml cloudlet-test",
-    "deploy-prod": "npm run-script deploy-apps && docker stack deploy --compose-file=./deploy/docker-compose-prod.yaml cloudle-prod",
+    "deploy-prod": "npm run-script deploy-apps && docker stack deploy --compose-file=./deploy/docker-compose-prod.yaml cloudlet-prod",
     "start": "node app.js"
   },
   "main": "app.js",

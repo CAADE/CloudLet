@@ -43,9 +43,7 @@ minimal “micro” cloud architecture. The C3_ architecture is the base to this
 * :ref:`SubSystem-Federated-Orchestrated-Cloud` - Federated Orchestrated to schedule service requests acrosss multiple clouds
 * :ref:`SubSystem-Identity-Manager` - Manages Identity across multiple clouds
 * :ref:`SubSystem-Telemetry` - Aggregates Telemetry before sharing the telemetry to the other cloudlets.
-* C3_ - This is a common hybrid cloud architecture that must be present in each cloud. The key elements that must
-be there are a Cloud management platform, an automation framework, and a platform as a service framework. This a
-requirement of the architecture not part of the architecture.
+* C3_ - This is a common hybrid cloud architecture that must be present in each cloud. The key elements that must be there are a Cloud management platform, an automation framework, and a platform as a service framework. This a requirement of the architecture not part of the architecture.
 
 Process Architecture
 --------------------
@@ -63,7 +61,6 @@ The Cloudlet architecture should be as light weight as possible and should integ
 systems with minimal impact on the current system. Existing cloud installations are used to handle the heavy lifting
 in the system. The cloudlet architecture requires a hybrid cloud architecture that includes Cloud Management
 Platform, Automation Framework & Platform as a Service, or the functions defined in those sets of tools.
-
 
 The Cloudlet Architecture has a :ref:`SubSystem-Cloudlet-Manager` is that placed as a connectivity layer between the hybrid cloud
 and the Federated Connectivity. The connectivity gives all of the functionality that is needed to

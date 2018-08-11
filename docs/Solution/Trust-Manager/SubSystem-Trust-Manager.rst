@@ -10,7 +10,7 @@ infrastructure. Overall trust and security in a cloud computing infrastructure m
 compute systems. The basic elements of this trusted platform span hardware, firmware, and software to provide the
 best balance of tamper-resistance and functionality.
 
-.. image:: Overivew.png
+.. image:: Overview.png
 
 Intel Trusted Execution Technology (TXT) is available with servers featuring the Intel® Xeon® processor E3, E5,
 and E7 families. Platform-level enhancements provide the building blocks to enable visibility, trust,
@@ -20,7 +20,7 @@ Intel TXT is a combination of hardware and software aimed at securing the execut
 contrast to solutions that protect the Operating System, Intel TXT builds a chain of trust from the system
 firmware all the way to the server or hypervisor to prevent attacks on system firmware or BIOS, MBR, boot
 loader, OS and hypervisor. Every component in this chain is verified against known good states and, depending
- on the result, marked either trusted or untrusted.
+on the result, marked either trusted or untrusted.
 
 .. image:: TXT.png
 
@@ -88,6 +88,7 @@ Users
 * :ref:`Actor-Operations-Manager`
 
 .. image:: UserInteraction.png
+
 
 Uses
 ----
